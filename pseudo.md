@@ -1,16 +1,19 @@
 # Pseudo code de votre programme
 1 : Definition des constantes
     int speed_route = 5;
+    int speed_sable = 2;
     int dy = 10; longueur total de la route(en KM)
     int dx = 3; longueur entre la route et le point dans le sable (en KM)
 2: Demander la saisie de L1 par utilisateur
     Stocker la valeur de L1 dans int L1 = saisie utilisateur
 2 : calcul de la distance dans le sable
     Definition du cote du triangle
-        cote_triangle = dy - L1
+        cote_triangle = dy - L1 //en KM
     Definition de l'hypothénus (distance dans le sable)
-    (dx)au carré + (cote_triangle) au carré le tout à la racine
+        hyopotenuse = (dx)au carré + (cote_triangle) au carré le tout à la racine //en Km
 4 : Calcul du temps par segement 
     Calcul du temps segement route 
         L1.(mettre en décimal)/Speed 1
+    Calcul du segement sable
+    double temps_sable = hyopotenuse.(mettre en decimal)/speed_sable.(mettre en decimal)
 5 : Calcul du temps total
