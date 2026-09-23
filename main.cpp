@@ -20,12 +20,15 @@ const double speed_route = 5;//en KM/h
 //Calcul du cote b
  double cote_b = dy-L1;
  //Calcul de l'hypothenus
- double hypothenus = sqrt ((cote_a*cote_a) + (cote_b*cote_b));
+ double hypothenus = sqrt((cote_a*cote_a) + (cote_b*cote_b));
  //Calcul des temps par partie
- double temps_sable = hypothenus/speed_route; //en heures
+ double temps_sable = hypothenus/speed_sable; //en heures
  double temps_route = L1/speed_route; // en heures
+ //Calcul du temps total
+ double temps_total = temps_route + temps_sable;
  //Affichage du temps total
- cout<<"Le temps total du parcours est "<< temps_route+temps_sable<<endl;
+ cout<<"Le temps total du parcours est "<< temps_total<<" heures"<<endl;
 
+ return EXIT_SUCCESS;
 }
 
