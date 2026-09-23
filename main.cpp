@@ -1,7 +1,31 @@
-/* --------------------------- 
+/* ---------------------------
 Laboratoire : 02
-Auteur(s) : 
-Date : 
+Auteur(s) : Maxime Schmidhauser
+Date : 23.09.2026
 But : Calcul du temps de trajet 
 Remarque(s) : 
 --------------------------- */
+#include <cmath>
+#include <iostream>
+#include <cstdlib>
+using namespace std;
+
+int main () {
+ //Definition des constantes
+const double speed_route = 5;//en KM/h
+ const double speed_sable = 2;// en KM/h
+ const double dy = 10;//longueur total de la route
+ const double cote_a = 3;//longueur entre le point et la route, coté a du triangle
+ const double L1 = 6;//Longueur du trajet sur route en km
+//Calcul du cote b
+ double cote_b = dy-L1;
+ //Calcul de l'hypothenus
+ double hypothenus = sqrt ((cote_a*cote_a) + (cote_b*cote_b));
+ //Calcul des temps par partie
+ double temps_sable = hypothenus/speed_route; //en heures
+ double temps_route = L1/speed_route; // en heures
+ //Affichage du temps total
+ cout<<"Le temps total du parcours est "<< temps_route+temps_sable<<endl;
+
+}
+
