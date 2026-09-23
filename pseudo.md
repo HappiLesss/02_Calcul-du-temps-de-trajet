@@ -5,11 +5,11 @@
     double dy = 10.; longueur total de la route(en KM)
     double dx = 3.; longueur entre la route et le point dans le sable (en KM)
     double L1 = 6. longueur du trajet sur la route du robot
-2 : calcul de la distance dans le sable
+2 : Calcul de la distance dans le sable
     Definition du cote du triangle
         cote_triangle = dy - L1 //en KM
     Definition de l'hypothénus (distance dans le sable)
-        hyopotenuse = (dx)au carré + (cote_triangle) au carré le tout à la racine //en Km
+        L2(Hypoténus) = (dx)au carré + (cote_triangle) au carré le tout à la racine //en Km
 4 : Calcul du temps par segement 
     Calcul du temps segement route 
     double temps_route =  L1.(mettre en décimal)/s1
