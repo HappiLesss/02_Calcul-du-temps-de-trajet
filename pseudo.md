@@ -1,9 +1,10 @@
 # Pseudo code de votre programme
 1 : Definition des constantes
-    int speed_route = 5;
-    int speed_sable = 2;
-    int dy = 10; longueur total de la route(en KM)
-    int dx = 3; longueur entre la route et le point dans le sable (en KM)
+    double speed_route = 5.;
+    double speed_sable = 2.;
+    double dy = 10.; longueur total de la route(en KM)
+    double dx = 3.; longueur entre la route et le point dans le sable (en KM)
+    double L1 = 6. longueur du trajet sur la route du robot
 2: Demander la saisie de L1 par utilisateur
     Stocker la valeur de L1 dans int L1 = saisie utilisateur
 2 : calcul de la distance dans le sable
