@@ -12,18 +12,18 @@ using namespace std;
 
 int main () {
  //Definition des constantes
-const double speed_route = 5;//en KM/h
- const double speed_sable = 2;// en KM/h
+const double s1 = 5;//en KM/h
+ const double s2 = 2;// en KM/h
  const double dy = 10;//longueur total de la route
- const double cote_a = 3;//longueur entre le point et la route, coté a du triangle
+ const double dx = 3;//longueur entre le point et la route, coté a du triangle
  const double L1 = 6;//Longueur du trajet sur route en km
 //Calcul du cote b
  double cote_b = dy-L1;
  //Calcul de l'hypothenus
- double L2 = sqrt((cote_a*cote_a) + (cote_b*cote_b));
+ double L2 = sqrt((dx*dx) + (cote_b*cote_b));
  //Calcul des temps par partie
- double temps_sable = L2/speed_sable; //en heures
- double temps_route = L1/speed_route; // en heures
+ double temps_sable = L2/s2; //en heures
+ double temps_route = L1/s1; // en heures
  //Calcul du temps total
  double temps_total = temps_route + temps_sable;
  //Affichage du temps total
