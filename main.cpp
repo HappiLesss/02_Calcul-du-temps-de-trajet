@@ -21,6 +21,13 @@ int main () {
  const double L1 = 6.;//Longueur du trajet sur route en km
  //Calcul du cote b
  double cote_b = dy-L1;
+ // Version bonus. Pour calculer l'option optimale, nous allons définir notre fonction de calul en mettant le l1 comme inconnue
+ //La fonction du calcul de l'hyopthenus est la suivant
+ //f(x) = (10-x)^2+3^2
+ //Nous voyons que c'est une fonction convexe
+ //Pour calculer le minmum, nous allonsdérivé notre fonction
+ //soit 2x-20=0
+ //La derivée est null en x=5 donc L1 sera égal à 5
 
 
  //Calcul de l'hypothenus
