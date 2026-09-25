@@ -18,7 +18,7 @@ int main () {
  const double dy = 10.;//longueur total de la route
  const double dx = 3.;//longueur entre le point et la route, coté a du triangle
  //Version de base
- const double L1 = 6.;//Longueur du trajet sur route en km
+ const double L1 = 8.7;//Longueur du trajet sur route en km
  //Calcul du cote b
  double cote_b = dy-L1;
  // Version bonus. Pour calculer l'option optimale, nous allons définir notre fonction de calul en mettant le l1 comme inconnue
