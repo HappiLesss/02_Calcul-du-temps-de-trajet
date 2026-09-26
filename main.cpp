@@ -13,8 +13,8 @@ using namespace std;
 int main () {
 
  //Definition des constantes
- const double s1 = 5.;//en KM/h
- const double s2 = 2.;// en KM/h
+ const double s1 = 5.;// vitesse sur la route en KM/h
+ const double s2 = 2.;// vitesse sur le sable en KM/h
  const double dy = 10.;//longueur total de la route
  const double dx = 3.;//longueur entre le point et la route, coté a du triangle
  //Version de base
@@ -25,8 +25,8 @@ int main () {
  double L2 = sqrt((dx*dx) + (cote_b*cote_b));
 
  //Calcul des temps par partie
- double temps_sable = L2/s2; //en heures
  double temps_route = L1/s1; // en heures
+ double temps_sable = L2/s2; //en heures
 
  //Calcul du temps total
  double temps_total = temps_route + temps_sable;
