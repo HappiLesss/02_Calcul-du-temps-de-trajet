@@ -17,16 +17,18 @@ int main () {
  const double s2 = 2.;// vitesse sur le sable en KM/h
  const double dy = 10.;//longueur total de la route
  const double dx = 3.;//longueur entre le point et la route, coté a du triangle
- //Version de base
+ // La valeure 8.7 a été trouvée en faisant la dérivée de la fonction total du temps
+ //Nous posons L1 comme valeure inconnue dans notre équation
+ //f(x) = x/5 + sqr(dx^2 + (10-x)^2)/2
  const double L1 = 8.7;//Longueur du trajet sur route en km
  //Calcul du cote b
- double cote_b = dy-L1;
+ const double cote_b = dy-L1;
  //Calcul de l'hypothenus
- double L2 = sqrt((dx*dx) + (cote_b*cote_b));
+ const  double L2 = sqrt(pow(dx,2) + pow(cote_b,2));
 
  //Calcul des temps par partie
- double temps_route = L1/s1; // en heures
- double temps_sable = L2/s2; //en heures
+ const double temps_route = L1/s1; // en heures
+ const double temps_sable = L2/s2; //en heures
 
  //Calcul du temps total
  double temps_total = temps_route + temps_sable;
