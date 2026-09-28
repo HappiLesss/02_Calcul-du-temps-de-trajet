@@ -22,16 +22,16 @@ int main () {
  //f(x) = x/5 + sqr(dx^2 + (10-x)^2)/2
  const double L1 = 8.7;//Longueur du trajet sur route en km
  //Calcul du cote b
- const double cote_b = dy-L1;
+ const double cote_b = dy-L1; // en KM
  //Calcul de l'hypothenus
- const  double L2 = sqrt(pow(dx,2) + pow(cote_b,2));
+ const double L2 = sqrt(pow(dx,2) + pow(cote_b,2)); //en KM
 
  //Calcul des temps par partie
  const double temps_route = L1/s1; // en heures
  const double temps_sable = L2/s2; //en heures
 
  //Calcul du temps total
- const double temps_total = temps_route + temps_sable;
+ const double temps_total = temps_route + temps_sable; //en heures
 
  //Affichage du temps total
  cout<<"Le temps total du parcours est "<< temps_total<<" heures"<<endl;
