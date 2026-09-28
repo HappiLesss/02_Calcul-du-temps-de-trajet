@@ -34,7 +34,7 @@ int main () {
  const double temps_total = temps_route + temps_sable; //en heures
 
  //Affichage du temps total
- cout<<"Le temps total du parcours est "<< temps_total<<" heures"<<endl;
+ std::cout<<"Le temps total du parcours est "<< temps_total<<" heures"<<std::endl;
 
  return EXIT_SUCCESS;
 }
