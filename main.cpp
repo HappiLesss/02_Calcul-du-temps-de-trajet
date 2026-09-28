@@ -31,7 +31,7 @@ int main () {
  const double temps_sable = L2/s2; //en heures
 
  //Calcul du temps total
- double temps_total = temps_route + temps_sable;
+ const double temps_total = temps_route + temps_sable;
 
  //Affichage du temps total
  cout<<"Le temps total du parcours est "<< temps_total<<" heures"<<endl;
